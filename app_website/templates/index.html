@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="{% static './src/imagens/favIcon1.png' %}" type="image/x-icon" id="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static './src/css/icon.css' %}">
+
+    <link rel="stylesheet" href="{% static './src/css/estilo.css' %}">
+
+    <link rel="stylesheet" href="{% static './src/css/reset.css' %}">
+
+    <link rel="stylesheet" href="{% static './src/css/scrollbar.css' %}">
+
+    <script type="text/javascript" src="{% static './src/js/script.js' %}" defer></script>
+
+    <title>Racionais Mc's</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav>
+            <ul class="menu">
+                <img class="logo" src="{% static './src/imagens/título.png' %}" alt="Logo em vermelho, do grupo Racionais Mc's">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'integrantes' %}">Integrantes</a></li>
+                <li><a href="{% url 'historia' %}">História</a></li>
+                <li><a href="{% url 'discografia' %}">Discografia</a></li>
+            </ul>       
+        </nav>
+    </header>
+    <div id="corpo">
+        <div class="carrossel">
+            <img class="imagem ativa" src="{% static './src/imagens/carrossel/1.png' %}" alt="Racionais no alto da favela encarando a câmera">
+            <img class="imagem" src="{% static './src/imagens/carrossel/2.jpg' %}" alt="Racionais no palco, com Ice Blue cantando">
+            <img class="imagem" src="{% static './src/imagens/carrossel/Racionais-credito-Netflix.webp' %}" alt="Racionais na frente de uma igreja">
+            <img class="imagem" src="{% static './src/imagens/carrossel/tumblr_p86dtpQmzo1qlyfnpo1_1280.jpg' %}" alt="Clipe vida loka II">
+            <img class="imagem" src="{% static './src/imagens/carrossel/17320148.jpeg' %}" alt="Racionais em frente a campo de terra">
+            <img class="imagem" src="{% static './src/imagens/carrossel/1_ymbSnD9yVMoe7EY6lcU3wg.jpg' %}" alt="Racionais parados no carro">
+        </div>
+        <div class="botoes-carrossel">
+            <button class="botao selecionado" id="botao1"></button>
+            <button class="botao" id="botao2"></button>
+            <button class="botao" id="botao3"></button>
+            <button class="botao" id="botao4"></button>
+            <button class="botao" id="botao5"></button>
+            <button class="botao" id="botao6"></button>
+        </div>
+        <div id="descricao">
+            <div id="div_desc">
+                <a href="https://www.netflix.com/br/title/81082516" class="detalhes" target="_blank"><img src="{% static './src/imagens/Netflix_2015_logo.svg.png' %}" id="netflix"alt="Netflix"></a>
+            </div>
+            <div id="div_filme">
+                <img src="{% static './src/imagens/20221116-racionais-papo-de-cinema-cartaz.png' %}" id="filme" alt="Filme: Racionais MC's -  Das Ruas de São Paulo pro Mundo">
+            </div>       
+            <div id="div_button">   
+                <button class="botao-trailer">Veja o trailer</button>
+            </div> 
+        </div>
+
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="900" height="354" src="https://www.youtube.com/embed/yygycbPNjAI" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- height="354" -->
+            </div>
+        </div>
+        
+        <p class="detalhes">Com seus protestos em forma de música, o lendário grupo de rap </p><p class="detalhes"> Racionais MC's transformou a poesia de rua em um movimento</p><p class="detalhes"> poderoso no Brasil e no mundo. </p>
+        <h2 class="titulo_h2">📅Shows📅</h2>
+        <div class="wrapper">
+            <div id="mes1">
+                <div class="quadro-calendario">
+                    <div class="mes">
+                        <p>JANEIRO</p>
+                    </div>
+                    <p class="dia">25</p>
+                    <div class="local">
+                        <span>LOCAL: MINEIRÃO</span>
+                        <span>HORÁRIO: 20H</span>
+                    </div>
+                    <button class="botao-comprar" onclick="botaoComprar()">Comprar agora!</button>
+                </div>
+            </div>
+        
+            <div id="mes2">
+                <div class="quadro-calendario">
+                    <div class="mes">
+                        <p>MARÇO</p>
+                    </div>
+        
+                    <p class="dia">13</p>
+        
+                    <div class="local">
+                        <span>LOCAL: ALLIANZ PARQUE</span>
+                        <span>HORÁRIO: 22H</span>
+                    </div>
+        
+                    <button class="botao-comprar" onclick="botaoComprar()">Comprar agora!</button>
+                </div>
+            </div>
+        
+            <div id="mes3">
+                <div class="quadro-calendario">
+                    <div class="mes">
+                        <p>MAIO</p>
+                    </div>
+        
+                    <p class="dia">12</p>
+        
+                    <div class="local">
+                        <span>LOCAL: VIRADA CULTURAL</span>
+                        <span>HORÁRIO: 22H</span>
+                    </div>
+        
+                    <button class="botao-comprar" onclick="botaoComprar()">Comprar agora!</button>
+                </div>
+            </div>
+        
+            <div id="mes4">
+                <div class="quadro-calendario">
+                    <div class="mes">
+                        <p>JULHO</p>
+                    </div>
+        
+                    <p class="dia">07</p>
+        
+                    <div class="local">
+                        <span>LOCAL: RECIFE RAP</span>
+                        <span>HORÁRIO: 19H</span>
+                    </div>
+        
+                    <button class="botao-comprar" onclick="botaoComprar()">Comprar agora!</button>
+                </div>
+            </div>
+        
+            <div id="mes5">
+                <div class="quadro-calendario">
+                    <div class="mes">
+                        <p>SETEMBRO</p>
+                    </div>
+        
+                    <p class="dia">19</p>
+        
+                    <div class="local">
+                        <span>LOCAL: BRASÍLIA</span>
+                        <span>HORÁRIO: 19H</span>
+                    </div>
+        
+                    <button class="botao-comprar" onclick="botaoComprar()">Comprar agora!</button>
+                </div>
+            </div>
+        
+            <div id="mes6">
+                <div class="quadro-calendario">
+                    <div class="mes">
+                        <p>NOVEMBRO</p>
+                    </div>
+        
+                    <p class="dia">03</p>
+        
+                    <div class="local">
+                        <span>LOCAL: AMSTERDÃ</span>
+                        <span>HORÁRIO: 15H</span>
+                    </div>
+        
+                    <button class="botao-comprar" onclick="botaoComprar()">Comprar agora!</button>
+                </div>
+            </div>
+
+            <div id="mes7">
+                <div class="quadro-calendario">
+                    <div class="mes">
+                        <p>NOVEMBRO</p>
+                    </div>
+        
+                    <p class="dia">20</p>
+        
+                    <div class="local">
+                        <span>LOCAL: EXPOAFRO</span>
+                        <span>HORÁRIO: 16H</span>
+                    </div>
+        
+                    <button class="botao-comprar" onclick="botaoComprar()">Comprar agora!</button>
+                </div>
+            </div>
+
+            <div id="mes8">
+                <div class="quadro-calendario">
+                    <div class="mes">
+                        <p>DEZEMBRO</p>
+                    </div>
+        
+                    <p class="dia">11</p>
+        
+                    <div class="local">
+                        <span>LOCAL: ITAQUERA</span>
+                        <span>HORÁRIO: 18H</span>
+                    </div>
+        
+                    <button class="botao-comprar" onclick="botaoComprar()">Comprar agora!</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p id="infooter">Site desenvolvido pelo grupo 4 do <a href="https://programadoresdoamanha.org" id="pda">Programadores do Amanhã</a></p>
+            <div>
+                <a href="https://github.com/JoaoAmorim01" target="_blank"><img id="github" src="{% static './src/imagens/Octicons-mark-github.svg.png' %}" alt="Logo Github"></a>
+            </div>
+        </footer>
+    </body>
+    </html>

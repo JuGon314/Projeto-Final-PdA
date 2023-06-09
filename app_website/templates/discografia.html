@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static '/src/imagens/favIcon1.png' %}" type="image/x-icon" id="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static '/src/css/icon.css' %}">
+
+    <link rel="stylesheet" href="{% static '/src/css/estilo.css' %}">
+
+    <link rel="stylesheet" href="{% static '/src/css/reset.css' %}">
+
+    <link rel="stylesheet" href="{% static '/src/css/scrollbar.css' %}">
+    <title>Discografia</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav>
+            <ul class="menu">
+                <img class="logo" src="{% static '/src/imagens/título.png' %}" alt="Logo em vermelho, do grupo Racionais Mc's">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'integrantes' %}">Integrantes</a></li>
+                <li><a href="{% url 'historia' %}">História</a></li>
+                <li><a href="{% url 'discografia' %}">Discografia</a></li>
+            </ul>       
+        </nav>
+    </header>
+    <h2 id="discografia">📀Discografia📀</h2>
+        <div class="discos">
+            <div class="album_text">
+                <figure class="album_figure">
+                    <img src="{% static '/src/imagens/álbuns/Holocausto_Urbano.jpg' %}" alt="Capa do álbum: Holocausto Urbano" class="album">
+                </figure>
+                <strong class="info_disco">
+                    <p class="p_info">Holocausto Urbano</p>
+                    <p class="p_info">1990</p>
+                    <p class="p_info">Gravadora: Zimbabwe Records</p> 
+                </strong>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5xQx7NRZ0P9s03owKob8iP?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="spotify"></iframe>
+            </div>
+            <div class="album_text">
+                <figure class="album_figure">
+                    <img src="{% static '/src/imagens/álbuns/Escolha_seu_Caminho.jpg' %}" alt="Capa do álbum: Escolha o seu Caminho" class="album">
+                </figure>
+                <strong class="info_disco">
+                    <p class="p_info">Escolha o seu Caminho</p>
+                    <p class="p_info">1992 - Álbum</p>
+                    <p class="p_info">Gravadora: Zimbabwe Records</p>
+                </strong>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4wtgvCPdYPKF8yYPmRiW6a?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="album_text">
+                <figure class="album_figure">
+                    <img src="{% static '/src/imagens/álbuns/Raio_X_Brasil.jpg' %}" alt="Capa do álbum: Raio X do Brasil" class="album">
+                </figure>
+                <strong class="info_disco">
+                    <p class="p_info">Raio X Brasil</p>
+                    <p class="p_info">1993</p>
+                    <p class="p_info">Gravadora: Zimbabwe Records</p>
+                </strong>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1nuZiJrGdPaY7PPFHdN746?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="discos">
+            <div class="album_text">
+                <figure class="album_figure">
+                    <img src="{% static '/src/imagens/álbuns/ab67616d0000b273439d4f2133d7bb56e4bc6f3b.jfif' %}" alt="Capa do álbum: Racionais MC's" class="album">
+                </figure>
+                <strong class="info_disco">
+                    <p class="p_info">Racionais MC's</p>
+                    <p class="p_info">1994</p>
+                    <p class="p_info">Gravadora: Zimbabwe Records</p>
+                </strong>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0whm9a0ytiWcZLP7AbaDM4?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="album_text">
+                <figure class="album_figure">
+                    <img src="{% static '/src/imagens/álbuns/220px-Sobrevivendo_no_Inferno.jpg' %}" alt="Capa do álbum: Sobrevivendo no Inferno" class="album">
+                </figure>
+                <strong class="info_disco">
+                    <p class="p_info">Sobrevivendo no Inferno</p>
+                    <p class="p_info">1997</p>
+                    <p class="p_info">Gravadora: Cosa Nostra</p>
+                </strong>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1UzrzuOmZfBgXyS3pgKD10?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="album_text">
+                <figure class="album_figure">
+                    <img src="{% static '/src/imagens/álbuns/Ao_Vivo_Racionais_MCs.jpg' %}" alt="Capa do Álbum: Ao Vivo" class="album">
+                </figure>
+                <strong class="info_disco">
+                    <p class="p_info">Ao Vivo</p>
+                    <p class="p_info">2001</p>
+                    <p class="p_info">Gravadora: Zimbabwe Records</p>
+                </strong>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1nuZiJrGdPaY7PPFHdN746?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="discos">
+            <div class="album_text">
+                <figure class="album_figure">
+                    <img src="{% static '/src/imagens/álbuns/Nada_como_um_dia_após_o_outro_dia.jpg' %}" alt="Capa do álbum: Nada Como Um Dia Após o Outro Dia" class="album">
+                </figure>
+                <strong class="info_disco">
+                    <p class="p_info">Nada Como Um Dia Após o Outro Dia</p>
+                    <p class="p_info">2002</p>
+                    <p class="p_info">Gravadora: Cosa Nostra</p>
+                </strong>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4HcPzKyKVtcZCwJgesoZWn?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="album_text">
+                <figure class="album_figure">
+                    <img src="{% static '/src/imagens/álbuns/66fbf373ca7b63e36538192817837cbb.webp' %}" alt="Capa do álbum: 1000 Trutas, 1000 Tretas" class="album">
+                </figure>
+                <strong class="info_disco">
+                    <p class="p_info">1000 Trutas, 1000 Tretas</p>
+                    <p class="p_info">2006</p>
+                    <p class="p_info">Gravadora: Boogie Naipe</p>
+                </strong>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4QvlTHd5GdQje8nxm9Bude?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="album_text">
+                <figure class="album_figure">
+                    <img src="{% static '/src/imagens/álbuns/Cores_&_Valores.jpg' %}" alt="Capa do álbum: Cores &Valores" class="album">
+                </figure>
+                <strong class="info_disco">
+                    <p class="p_info">Cores & Valores</p>
+                    <p class="p_info">2014</p>
+                    <p class="p_info">Gravadora: Cosa Nostra</p>
+                </strong>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1CYfSGAq6xQNF5V8CAeP7m?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>    
+    <footer>
+        <p id="infooter">Site desenvolvido pelo Grupo 4 <a href="https://programadoresdoamanha.org" id="pda">Programadores do Amanhã</a></p>
+        <div>
+            <a href="https://github.com/JoaoAmorim01" target="_blank"><img id="github" src="{% static '/src/imagens/Octicons-mark-github.svg.png' %}" alt="Logo Github"></a>
+        </div>
+    </footer>
+</body>
+</html>

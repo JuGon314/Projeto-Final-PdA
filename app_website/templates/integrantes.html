@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static '/src/imagens/favIcon1.png' %}" type="image/x-icon" id="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static '/src/css/icon.css' %}">
+
+    <link rel="stylesheet" href="{% static '/src/css/estilo_integrantes.css' %}">
+
+    <link rel="stylesheet" href="{% static '/src/css/reset.css' %}">
+
+    <link rel="stylesheet" href="{% static '/src/css/scrollbar.css' %}">
+    <title>Integrantes</title>
+</head>
+<body id="corpo">
+    <header class="cabecalho">
+        <nav>
+            <ul class="menu">
+                <img class="logo" src="{% static '/src/imagens/título.png' %}" alt="Logo em vermelho, do grupo Racionais Mc's">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'integrantes' %}">Integrantes</a></li>
+                <li><a href="{% url 'historia' %}">História</a></li>
+                <li><a href="{% url 'discografia' %}">Discografia</a></li>
+            </ul>       
+        </nav>
+    </header>
+    <h2 id="integ_h2">🎤Integrantes🎤</h2>
+        <ul>    
+            <div id="container">
+                <div class="integrantes">
+                    <img src="{% static '/src/imagens/integrantes/Edi Rock.jpg' %}" id="rock" alt="Edi Rock, integrante dos Racionais Mc's">
+                    <div class="desc_artista">
+                        <p class="nome">Edi Rock</p>
+                        <p class="desc_art">
+                            Edivaldo Pereira Alves nasceu em São Paulo no dia 20 de setembro de 1970, mais conhecido pelo seu nome artístico, Edi Rock é um rapper e compositor brasileiro.
+    
+                            É de autoria de Edi Rock as canções "Mágico de Oz","Tempos Difíceis" e "Rapaz Comum", além de várias outras as quais fez em parceria com Mano Brown e Ice Blue. Além disso, compôs uma canção em parceria com a banda inglesa Asian Dub Foundation na faixa 19 Rebellions sobre as rebeliões orquestradas pelo Primeiro Comando da Capital (PCC) em 2001 e seu exemplo como ação organizada contra o estado e o status quo.Em 2012, Edi Rock lançou a canção "That's My Way" junto com Seu Jorge, a qual foi indicada para o Prêmio VMB como "Melhor Videoclipe", porém perdeu para "Mil Faces de um Homem Leal", do próprio Racionais MC's. Edi Rock já gravou 3 cds solos, o último foi pela Som Livre.</p>
+                    </div>
+                </div>
+                <div class="integrantes">
+                    <img src="{% static '/src/imagens/integrantes/Ice Blue.jpg' %}" alt="Ice Blue, integrante dos Racionais Mc's">
+                    <div class="desc_artista">
+                        <p class="nome">Ice Blue</p>
+                        <p class="desc_art">
+                            Paulo Eduardo Salvador, mais conhecido como Ice Blue, nasceu no dia 16 de março de 1971, apresenta o programa "Balanço Rap" na estação de rádio 105 FM junto com o companheiro de grupo KL Jay. Seu apelido vem de "Nego Blue", música de Jorge Ben Jor. Mano Brown diz que é porque "ele andava sempre arrumadinho". Atualmente está trabalhando no seu primeiro disco solo.
+                        </p>
+                    </div>
+                </div>
+                <div class="integrantes">
+                    <img src="{% static '/src/imagens/integrantes/KLJay.jpg' %}" alt="DJ KL Jay, integrante dos Racionais Mc's">
+                    <div class="desc_artista">
+                        <p class="nome">DJ KL Jay</p>
+                        <p class="desc_art">
+                            Kleber Geraldo Lelis Simões, mais conhecido por seu nome artístico KL Jay, nasceu em São Paulo no dia 10 de agosto de 1969 em São Paulo. KL Jay é o DJ dos Racionais MC's. Cabe a ele a criação das bases, que são aquelas batidas que acompanham o lírico, dando o ritmo certo para esses serem cantados. Paralelo ao grupo, KL Jay já gravou alguns álbuns solos e tem um selo musical chamado KL Música.
+                        </p>
+                    </div>
+                </div>
+                <div class="integrantes">
+                    <img src="{% static '/src/imagens/integrantes/Mano Brown.jpg' %}" alt="Mano Brown, integrante dos Racionais Mc's">
+                    <div class="desc_artista">
+                        <p class="nome">Mano Brown</p>
+                        <p class="desc_art">
+                            Pedro Paulo Soares Pereira nasceu em São Paulo no dia 22 de abril de 1970, mais conhecido como Mano Brown, é um rapper brasileiro, produtor e vocalista dos Racionais MC's. É autor de canções como "Vida Loka I", "Vida Loka II", "Negro Drama" (com Edi Rock), "A Vida é Desafio", "Jesus Chorou", "Da Ponte pra Cá", "Capítulo 4, Versículo 3", "Tô Ouvindo Alguém Me Chamar", "Diário de um Detento", "Fórmula Mágica da Paz", "Homem na Estrada", "Fim de Semana no Parque" (com Edi Rock), "Mano Na Porta do Bar", "Negro Limitado" (com Edi Rock) "Pânico na Zona Sul" e "Artigo 157".
+                        </p>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </ul>    
+        <footer>
+            <p id="infooter">Site desenvolvido pelo grupo 4 do <a href="https://programadoresdoamanha.org" id="pda">Programadores do Amanhã</a></p>
+            <div>
+                <a href="https://github.com/JoaoAmorim01" target="_blank"><img id="github" src="{% static '/src/imagens/Octicons-mark-github.svg.png' %}" alt="Logo Github"></a>
+            </div>
+        </footer>    
+</body>
+</html>
